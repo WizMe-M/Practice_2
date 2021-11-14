@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:stretchColumns="*"
+    android:background="@color/red"
+    tools:context=".CalculatorActivity">
+
+    <TableRow style="@style/SampleTableRow">
+
+        <TextView
+            android:id="@+id/txtResult"
+            style="@style/SampleTextViewLandscape" />
+    </TableRow>
+
+    <TableRow style="@style/SampleTableRow">
+
+        <TextView
+            android:id="@+id/txtInput"
+            style="@style/SampleTextViewLandscape" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDigit"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDigit"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDigit"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/InputButtonLandscape"
+            android:onClick="plus"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnSolve"
+            style="@style/InputButtonLandscape"
+            android:onClick="equal"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/btnDel"
+            style="@style/InputButtonLandscape"
+            android:onClick="delete"
+            android:text="Del" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDigit"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDigit"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDigit"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnMinus"
+            style="@style/InputButtonLandscape"
+            android:onClick="minus"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btnSqrt"
+            style="@style/InputButtonLandscape"
+            android:onClick="sqrt"
+            android:text="√X" />
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/InputButtonLandscape"
+            android:onClick="clear"
+            android:text="C" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDigit"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDigit"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDigit"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnMultiple"
+            style="@style/InputButtonLandscape"
+            android:onClick="multiply"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/btnFactorial"
+            style="@style/InputButtonLandscape"
+            android:onClick="factorial"
+            android:text="n!" />
+
+        <Button
+            android:id="@+id/btnClearAll"
+            style="@style/InputButtonLandscape"
+            android:onClick="clearAll"
+            android:text="CE" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnNegate"
+            style="@style/InputButtonLandscape"
+            android:onClick="negateNumber"
+            android:text="+/-" />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDigit"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/InputButtonLandscape"
+            android:onClick="inputDot"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btnDivide"
+            style="@style/InputButtonLandscape"
+            android:onClick="divide"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/btnSquare"
+            style="@style/InputButtonLandscape"
+            android:onClick="square"
+            android:text="X^2" />
+
+        <Button
+            android:id="@+id/btnPercent"
+            style="@style/InputButtonLandscape"
+            android:onClick="reverseNumber"
+            android:text="1/X" />
+
+    </TableRow>
+</TableLayout>
